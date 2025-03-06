@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/normalize.css">
 </head>
 
 <style>
+<<<<<<< HEAD:index.html
       header{
 
             display: flex;
@@ -94,51 +95,223 @@
     .Awards {
 
         text-align: center;
+=======
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+>>>>>>> ee27b1fa8ee0cef2b9aaac071edfd8087da22c7f:sample.html
     }
-    .Awards  > div{
+
+    /* Header Styles */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header > nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header > nav > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    header > nav > ul > li {
+        margin-left: 20px;
+    }
+
+    header > nav > ul > li > a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    header > nav > ul > li > a:hover {
+        color: #ff6347;
+    }
+
+    /* Main Section Styles */
+    main {
         display: grid;
-        grid-template-columns:repeat(2,1fr) ;
-        margin: 50px;
-        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
         place-items: center;
-
-
+        padding: 20px;
+        border: 1px solid black;
+        height: 90vh;
     }
-    .Awards >div >:first-child{
+
+    main > img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    main > div {
+        text-align: center;
+    }
+
+    main > div > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    main > div > p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    main > div > button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    main > div > button:hover {
+        background-color: #ff6347;
+    }
+
+    /* Home Section Styles */
+    .home {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home > div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 50px 0;
+    }
+
+    .home > div > div {
         border: 2px solid black;
         text-align: center;
-        width: 391px;
+        padding: 20px;
         height: 500px;
-
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .Awards >div >:nth-child(2){
-
-    text-align: center;
-    margin: 70px;
-
+    .home > div > div:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
-    @media all and (max-width: 908px){
-        .Awards  > div{
-        grid-template-columns:repeat(1,1fr) ;
-
-
-
+    .home > div > div > h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
+    .home > div > div > p {
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
 
+    .home > div > div > button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
+    .home > div > div > button:hover {
+        background-color: #ff6347;
+    }
+
+    /* Awards Section Styles */
+    .Awards {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .Awards > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 50px 0;
+        place-items: center;
+    }
+
+    .Awards > div > div {
+        border: 2px solid black;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        max-width: 391px;
+        height: 500px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .Awards > div > div:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .Awards > div > div > p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Responsive Styles */
+    @media all and (max-width: 1050px) {
+        main {
+            grid-template-columns: repeat(1, 1fr);
+            height: auto;
+        }
+
+        .home > div {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .Awards > div {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media all and (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        header > nav > ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        header > nav > ul > li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    }
 </style>
 <body>
 
-
     <header>
         <nav>
-
             <img src="assets/ijse@1x.png" alt="Ijse">
-
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Services</a></li>
@@ -146,21 +319,15 @@
                 <li><a href="">About Us</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-
         <div>
-                <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <button>click me</button>
-
-
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>click me</button>
         </div>
-
         <img src="assets/img.png" alt="home img">
-
     </main>
 
     <section class="home">
@@ -170,40 +337,23 @@
                 <h1>Lorem</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur cum ex explicabo
                     fuga illum impedit, iusto odit quasi recusandae reprehenderit, sed veniam vero voluptatibus! Iste quos reprehenderit suscipit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur cum ex explicabo
-                    fuga illum impedit, iusto odit quasi recusandae reprehenderit, sed veniam vero voluptatibus! Iste quos reprehenderit suscipit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur cum ex explicabo
-                    fuga illum impedit, iusto odit quasi recusandae reprehenderit, sed veniam vero voluptatibus! Iste quos reprehenderit suscipit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur cum ex explicabo
-                    fuga illum impedit, iusto odit quasi recusandae reprehenderit, sed veniam vero voluptatibus! Iste quos reprehenderit suscipit.</p>
                 <button>click me</button>
-
             </div>
             <div></div>
             <div></div>
         </div>
-
     </section>
 
     <section class="Awards">
-
         <h1>Awards</h1>
         <div>
             <div></div>
             <div>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dignissimos earum impedit itaque
-                        iusto perferendis quibusdam quisquam rerum saepe sed suscipit veritatis! Commodi debitis dolorum,
-                        eveniet nesciunt sapiente sequi unde.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dignissimos earum impedit itaque
-                        iusto perferendis quibusdam quisquam rerum saepe sed suscipit veritatis! Commodi debitis dolorum,
-                        eveniet nesciunt sapiente sequi unde.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dignissimos earum impedit itaque
-                        iusto perferendis quibusdam quisquam rerum saepe sed suscipit veritatis! Commodi debitis dolorum,
-                        eveniet nesciunt sapiente sequi unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dignissimos earum impedit itaque
+                    iusto perferendis quibusdam quisquam rerum saepe sed suscipit veritatis! Commodi debitis dolorum,
+                    eveniet nesciunt sapiente sequi unde.</p>
             </div>
         </div>
-
     </section>
 
 </body>
