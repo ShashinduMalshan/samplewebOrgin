@@ -73,14 +73,23 @@
         height: 500px;
         }
 
-    @media all and (max-width: 1050px)  {
 
+       @media all and (max-width: 1050px) and (min-width: 500px){
         main {
-
-            grid-template-columns:repeat(1, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            height: auto;
         }
+    }
 
-        }
+    @media all and (max-width: 500px) {
+        main {
+            grid-template-columns: repeat(1, 1fr);
+        }         }
+      main > div , main > img{
+          width: auto;
+      }
+
+
     @media all and (max-width: 1050px)  {
 
             .home > div {
@@ -237,6 +246,9 @@
         background-color: #ff6347;
     }
 
+
+            /* Responsive Styles */
+
     /* Awards Section Styles */
     .Awards {
         padding: 20px;
@@ -273,10 +285,6 @@
 
     /* Responsive Styles */
     @media all and (max-width: 1050px) {
-        main {
-            grid-template-columns: repeat(1, 1fr);
-            height: auto;
-        }
 
         .home > div {
             grid-template-columns: repeat(1, 1fr);
