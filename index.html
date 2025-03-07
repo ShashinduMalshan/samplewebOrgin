@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>sampleWeb</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/lib/normalize.css">
     <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
@@ -157,6 +157,12 @@
 
     }
 
+    .Awards > div > :first-child > iframe{
+        width: 500px;
+        height: 500px;
+
+    }
+
     /* Responsive Styles */
     @media all and (max-width: 1050px) {
         .Awards > div {
@@ -168,8 +174,11 @@
             height: 300px;
 
     }
+        .Awards > div > :first-child > iframe{
+            width: 100%;
+            height: 300px;
 
-    }
+    }}
 
 
     button{
@@ -179,6 +188,10 @@
         background-color: #333;
         border: none;
         font-weight: bold;
+    }
+
+    footer > div {
+        text-align: center;
     }
 
 </style>
@@ -237,7 +250,11 @@
     <section class="Awards" id="Awards">
         <h1>Awards</h1>
         <div>
-            <div></div>
+            <div><iframe width="1905" height="764" src="https://www.youtube.com/embed/B1rSYHL62xA"
+                         title="Kawda Boy - Aiyalage nadagama -කවුද බෝයි - අයියලාගේ නාඩගම" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                          picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                         allowfullscreen></iframe></div>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Accusation, pianissimos arum impeded image
                     gusto dispenser quicksand squamous rerun escape sed suspicious veritas! Commodity debits doldrums,
@@ -245,6 +262,12 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div>
+            <p>&copy; <strong>2020 - 2023 Your Company Name. All rights reserved.</strong></p>
+        </div>
+    </footer>
 
 </body>
 </html>
