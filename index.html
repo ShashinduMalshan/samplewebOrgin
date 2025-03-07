@@ -4,139 +4,158 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web/js/all.min.js">
 </head>
 
 <style>
-      header{
+    header{
+        display: flex;
+        position: relative;
+        background: #333;
+        color: white;
+        padding: 10px 20px;
+        align-items: center;
 
-            display: flex;
-            position: relative;
+    }
 
-        }
-/*shasidumalshan*/
-        header > nav{
+    header > nav{
+        display: flex;
+        position: relative;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
 
+    }
 
-            display: flex;
+    header > nav > ul {
+        position: relative;
+        display: flex;
+        gap: 42px;
+        list-style: none;
+    }
 
-
-         }
-        header > nav > ul > li{
-            position: relative;
-            display: inline;
-            text-decoration: none;
-
-
-        }
-/*shasidu*/
-
-        main{
-            position: relative;
-            border: 1px solid black;
-            width:auto;
-            height:90vh;
-            display: grid;
-            grid-template-columns:repeat(2 , 1fr);
-            place-items: center;
-
-
-        }
-
-        main > img{
-            position: relative;
-            width: 500px;
-            height: 500px;
-
-
-        }
-
-        main > div  {
-            text-align: center;
-
+    .fa-bars {
+        display: none;
         }
 
 
-      .home > div {
+    header > nav > ul > li{
+        display: inline;
+        text-decoration: none;
+        font-size: 21px;
 
+    }
+
+    header > nav > ul > li > a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    @media all and (max-width: 768px){
+
+        header > nav > ul {
+            display: none;
+        }
+        .fa-bars {
+        display: flex;
+        }}
+
+    main{
+        position: relative;
+        border: 1px solid black;
+        width:auto;
+        height:90vh;
         display: grid;
-          margin: 50px;
-          gap: 10px;
+        grid-template-columns:repeat(2 , 1fr);
+        place-items: center;
+    }
+
+    main > img{
+        position: relative;
+        width: 500px;
+        height: 500px;
+    }
+
+    main > div  {
+        text-align: center;
+    }
+
+
+    .home > div {
+        display: grid;
+        margin: 50px;
+        gap: 10px;
         grid-template-columns:repeat(3 , 1fr);
+    }
 
-        }
-
-      .home > div > div{
-
+    .home > div > div{
         border: 2px solid black;
         text-align: center;
         height: 500px;
-        }
+    }
 
 
-       @media all and (max-width: 1050px) and (min-width: 500px){
+    @media all and (max-width: 1050px) and (min-width: 500px){
         main {
             grid-template-columns: repeat(1, 1fr);
             height: auto;
-        }
-    }
-
+        }}
 
 
     @media all and (max-width: 500px) {
         main {
             grid-template-columns: repeat(1, 1fr);
         }
-    main > div, main > img {
-         width: auto;
+
+        main > div, main > img {
+            width: auto;
      }}
 
-    @media all and (max-width: 1050px)  {
 
-            .home > div {
+    @media all and (max-width: 1050px) {
 
-                grid-template-columns:repeat(1, 1fr);
-            }
-
-            }
+        .home > div {
+            grid-template-columns:repeat(1, 1fr);
+        }}
 
 
     .Awards {
-
         text-align: center;
-
+    }
 
     /* Responsive Styles */
     @media all and (max-width: 1050px) {
-
         .Awards > div {
             grid-template-columns: repeat(1, 1fr);
-        }
-    }
+        }}
 
-    }
+
 </style>
 <body>
 
     <header>
         <nav>
-            <img src="assets/ijse@1x.png" alt="Ijse">
+            <img src="assets/Images/ijse@1x.png" alt="Ijse">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">About Us</a></li>
             </ul>
+            <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
         </nav>
     </header>
 
     <main>
         <div>
             <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur radicalising elit.</p>
             <button>click me</button>
         </div>
-        <img src="assets/img.png" alt="home img">
+        <img src="assets/Images/image.jpeg" alt="home img">
     </main>
 
     <section class="home">
@@ -144,22 +163,22 @@
         <div>
             <div>
                 <h1>Lorem</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur cum ex explicabo
-                    fuga illum impedit, iusto odit quasi recusandae reprehenderit, sed veniam vero voluptatibus! Iste quos reprehenderit suscipit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Ad architect consectetur cum ex explicable
+                    fugal illumos impeded, gusto edit quasi redundancy reprehend, sed venial vero voluptuous! site quo reprehend suspicious.</p>
                 <button>click me</button>
             </div>
 
             <div>
                 <h1>Lorem</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur cum ex explicabo
-                    fuga illum impedit, iusto odit quasi recusandae reprehenderit, sed veniam vero voluptatibus! Iste quos reprehenderit suscipit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Ad architect consectetur cum ex explicable
+                    fugal illumos impeded, gusto edit quasi redundancy reprehend, sed venial vero voluptuous! site quo reprehend suspicious.</p>
                 <button>click me</button>
             </div>
 
             <div>
                 <h1>Lorem</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consectetur cum ex explicabo
-                    fuga illum impedit, iusto odit quasi recusandae reprehenderit, sed veniam vero voluptatibus! Iste quos reprehenderit suscipit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Ad architect consectetur cum ex explicable
+                    fugal illumos impeded, gusto edit quasi redundancy reprehend, sed venial vero voluptuous! site quo reprehend suspicious.</p>
                 <button>click me</button>
             </div>
 
