@@ -86,11 +86,10 @@
     @media all and (max-width: 500px) {
         main {
             grid-template-columns: repeat(1, 1fr);
-        }         }
-      main > div , main > img{
-          width: auto;
-      }
-
+        }
+    main > div, main > img {
+         width: auto;
+     }}
 
     @media all and (max-width: 1050px)  {
 
@@ -105,213 +104,16 @@
     .Awards {
 
         text-align: center;
-    /* General Styles */
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-    }
 
-    /* Header Styles */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #333;
-        color: #fff;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-
-    header > nav {
-        display: flex;
-        align-items: center;
-    }
-
-    header > nav > ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    header > nav > ul > li {
-        margin-left: 20px;
-    }
-
-    header > nav > ul > li > a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
-
-    header > nav > ul > li > a:hover {
-        color: #ff6347;
-    }
-
-    /* Main Section Styles */
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        place-items: center;
-        padding: 20px;
-        border: 1px solid black;
-        height: 90vh;
-    }
-
-    main > img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-    }
-
-    main > div {
-        text-align: center;
-    }
-
-    main > div > h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    main > div > p {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-    }
-
-    main > div > button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        color: #fff;
-        background-color: #333;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    main > div > button:hover {
-        background-color: #ff6347;
-    }
-
-    /* Home Section Styles */
-    .home {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .home > div {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin: 50px 0;
-    }
-
-    .home > div > div {
-        border: 2px solid black;
-        text-align: center;
-        padding: 20px;
-        height: 500px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .home > div > div:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .home > div > div > h1 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .home > div > div > p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-
-    .home > div > div > button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        color: #fff;
-        background-color: #333;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .home > div > div > button:hover {
-        background-color: #ff6347;
-    }
-
-
-            /* Responsive Styles */
-
-    /* Awards Section Styles */
-    .Awards {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .Awards > div {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: 50px 0;
-        place-items: center;
-    }
-
-    .Awards > div > div {
-        border: 2px solid black;
-        text-align: center;
-        padding: 20px;
-        width: 100%;
-        max-width: 391px;
-        height: 500px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .Awards > div > div:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .Awards > div > div > p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
 
     /* Responsive Styles */
     @media all and (max-width: 1050px) {
-
-        .home > div {
-            grid-template-columns: repeat(1, 1fr);
-        }
 
         .Awards > div {
             grid-template-columns: repeat(1, 1fr);
         }
     }
 
-    @media all and (max-width: 768px) {
-        header {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        header > nav > ul {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        header > nav > ul > li {
-            margin-left: 0;
-            margin-bottom: 10px;
-        }}
     }
 </style>
 <body>
