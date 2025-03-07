@@ -91,6 +91,10 @@
         text-align: center;
     }
 
+    .service  > h1 {
+        text-align: center;
+    }
+
     .service > div {
         display: grid;
         margin: 50px;
@@ -128,15 +132,43 @@
         }}
 
 
-    .Awards {
+    .Awards{
+        border: 1px solid black;
+    }
+
+    .Awards h1{
         text-align: center;
+    }
+
+    .Awards > div  {
+        display: grid;
+        margin: 50px;
+        gap: 10px;
+        place-items: center;
+        text-align: center;
+        grid-template-columns:repeat(2 , 1fr);
+
+
+    }
+    .Awards > div > :first-child {
+        border: 2px solid black;
+        width: 500px;
+        height: 500px;
+
     }
 
     /* Responsive Styles */
     @media all and (max-width: 1050px) {
         .Awards > div {
             grid-template-columns: repeat(1, 1fr);
-        }}
+
+        }
+        .Awards > div > :first-child {
+            width: 100%                                                                                                                                               ;
+
+    }
+
+    }
 
 
     button{
@@ -206,9 +238,9 @@
         <div>
             <div></div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dignissimos earum impedit itaque
-                    iusto perferendis quibusdam quisquam rerum saepe sed suscipit veritatis! Commodi debitis dolorum,
-                    eveniet nesciunt sapiente sequi unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Accusation, pianissimos arum impeded image
+                    gusto dispenser quicksand squamous rerun escape sed suspicious veritas! Commodity debits doldrums,
+                    event senescent sapient sequin under.</p>
             </div>
         </div>
     </section>
