@@ -91,14 +91,14 @@
         text-align: center;
     }
 
-    .home > div {
+    .service > div {
         display: grid;
         margin: 50px;
         gap: 10px;
         grid-template-columns:repeat(3 , 1fr);
     }
 
-    .home > div > div{
+    .service > div > div{
         border: 2px solid black;
         text-align: center;
         height: 500px;
@@ -123,7 +123,7 @@
 
     @media all and (max-width: 1050px) {
 
-        .home > div {
+        .service > div {
             grid-template-columns:repeat(1, 1fr);
         }}
 
@@ -155,9 +155,9 @@
         <nav>
             <img src="assets/Images/ijse@1x.png" alt="Ijse">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Awards</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#Awards">Awards</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">About Us</a></li>
             </ul>
@@ -165,7 +165,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="home"  id="home" >
         <div>
             <h1>Welcome</h1>
             <p>Lorem ipsum dolor sit amet, consectetur radicalising elit.</p>
@@ -174,7 +174,7 @@
         <img src="assets/Images/image.jpeg" alt="home img">
     </main>
 
-    <section class="home">
+    <section class="service" id="service">
         <h1>services</h1>
         <div>
             <div>
@@ -201,7 +201,7 @@
         </div>
     </section>
 
-    <section class="Awards">
+    <section class="Awards" id="Awards">
         <h1>Awards</h1>
         <div>
             <div></div>
